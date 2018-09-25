@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { /* va influencer tout le code*/
+  color: #555; /*va influencer la couleur du texte*/
+  margin: 0; /*va réduire les marges et alignés au centre*/
+
+  font-family: 'Montserrat', sans-serif;
+}
+#header { /*va jouer sur toute l'entête*/
+  background-color: #1abc9c;
+  height: 150px;
+  line-height: 150px;
+}
+#header a { /*va agir sur les liens présents dans la section "header"*/
+  color: white; /*colore en blanc*/
+  text-decoration: none; /*ôte l'aspect du texte : ici le surligné des liens*/
+  text-transform: uppercase; /*mets l'entête en maj.*/
+  letter-spacing: 0.1em; /*augmente taille espace entre les lettres de l'entête*/
+}
+#header a:hover {
+  color: #222;
+}
+#header-title {
+  display: block;
+  float: left; /*va mettre le titre à gauche*/
+  font-size: 20px; /*va définir la taille du titre*/
+  font-weight: bold; /*va mettre le titre en gras*/
+}
+#header-nav { /*va influencer la navigation*/
+  display: block;
+  float: right; /*va mettre la navigation à droite*/
+}
+#header-nav  li {
+  display: inline;
+  padding-left: 20px; /*va ajouter un espace de 20px à gauche de la navigation*/
+  margin-top: 0;
+}
+.container { /*va influencer tous les éléments compris dans la classe "container"*/
+  max-width: 1000px; /*va influencer la longueur maximum des éléments "container"*/
+  margin: 0 auto; /*va centré les éléments "container"*/
+}
+#footer {
+  background-color: #2f2f2f; /*couleur pied de page*/
+  padding: 50px 0; /* hauteur du pied de page*/
+}
+.column {
+  min-width: 300px;
+  display: inline-block; /*aligne les éléments*/
+  vertical-align: top; /*aligne le haut des éléments pour les avoir à la même hauteur*/
+}
+#footer h4 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p {
+  color: white; /*pour mettre les paragraphes du pied de page en blanc*/
+}
+a{
+  color: #1abc9c;
+  text-decoration: none;
+}
+a:hover {
+  color: #F6A623;
+}
+.post, .about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.about {
+  text-align: center;
+}
+.post-author img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.post-author img, .about-author img{
+  border-radius: 50%;
+}
+.post-author span {
+  margin-left: 16px;
+}
+.post-date {
+  color: #D2D2D2;
+
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h1, h2, h3, h4 {
+  color: #333;
+}
+p {
+  line-height: 1.5;
+}
+.post-container:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
